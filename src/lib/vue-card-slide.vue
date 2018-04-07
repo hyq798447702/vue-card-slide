@@ -20,7 +20,7 @@
             </div>
           </transition>
         </div>
-       <!--  <div class='judge'>
+        <!-- <div class='judge'>
           <div class="circle cirMargin" @click="success()"><span>对</span></div>
           <div class="circle" @click="error()"><span>错</span></div>
         </div> -->
@@ -58,6 +58,16 @@
 
       }
     },
+    props: {
+      width: {
+        type: String,
+        required: false
+      },
+      height:  {
+        type: String,
+        required:false
+      }
+    },
     computed: {
       direction () {
         if(this.direct==0){
@@ -68,6 +78,7 @@
       }
     },
     mounted(){
+      console.log(this.width)
         touch('box');
         touch('box2');
         touch('box3');
@@ -135,7 +146,9 @@
         if(numb==1){
           this.direct=1;
           this.label_result=0;
+          this.$emit('error','right-swipe');
         }else {
+          this.$emit('success','left-swipe');
           this.direct=0;
           this.label_result=1;
         }

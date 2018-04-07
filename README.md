@@ -20,4 +20,14 @@ Vue.use(cardSlide)
 <vue-card-slide></vue-card-slide>
 ```
 
+## 配置
+```JS
+<vue-card-slide @success='sucEvent' @error='errEvent'></vue-card-slide>
+```
 
+### 事件
+
+| name | Description   |
+| :--------:   | -----  |
+|    success    |  左滑
+|    error    |  右滑

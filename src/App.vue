@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-card-slide></vue-card-slide>
+    <vue-card-slide :width='data' @success='something' @error='something1'></vue-card-slide>
   </div>
 </template>
 
@@ -9,7 +9,15 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      data:'100px'
+    }
+  },
+  methods:{
+    something(value){
+      console.log(value)
+    },
+    something1(value){
+      console.log(value)
     }
   }
 }
