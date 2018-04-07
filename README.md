@@ -1,18 +1,23 @@
 # vue-card-slide
 
-> A Vue.js project
+> A vue plugin for Carousel Card Slide
 
 ## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
+```JS
+npm install vue-card-slide --save
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Use 
+```JS
+# ES6引入
+import cardSlide from 'vue-card-slide'
+# require引入
+var cardSlide = require('CardSlide')
+
+Vue.use(cardSlide)
+
+# 组件中使用
+<vue-card-slide></vue-ard-slide>
+```
+
+
