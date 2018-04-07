@@ -9,7 +9,7 @@ module.exports = {
     // publicPath: '/dist/',
     // filename: 'build.js'
     path: path.resolve(__dirname, './dist'),
-    publicPath: '',
+    publicPath: 'https://github.com/Carrie999/vue-card-slide',
     filename: 'vue-card-slide.js',
     library: 'VueCardSlide',
     libraryTarget: 'umd',
