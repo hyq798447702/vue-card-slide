@@ -17,7 +17,7 @@ var cardSlide = require('CardSlide')
 Vue.use(cardSlide)
 
 // 组件中使用
-<vue-card-slide></vue-ard-slide>
+<vue-card-slide></vue-card-slide>
 ```
 
 
