@@ -9,9 +9,9 @@ npm install vue-card-slide --save
 
 ## Use 
 ```JS
-// ES6引入
+// ES6 import
 import cardSlide from 'vue-card-slide'
-// require引入
+// require import
 var cardSlide = require('CardSlide')
 
 Vue.use(cardSlide)
@@ -29,5 +29,5 @@ Vue.use(cardSlide)
 
 | name | Description   |
 | :--------:   | -----  |
-|    success    |  左滑
-|    error    |  右滑
+|    success    |  leftSwipe
+|    error    |  rightSwipe
