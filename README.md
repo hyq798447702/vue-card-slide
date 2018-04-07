@@ -16,16 +16,16 @@ var cardSlide = require('CardSlide')
 
 Vue.use(cardSlide)
 
-// 组件中使用
+// use in component
 <vue-card-slide></vue-card-slide>
 ```
 
-## 配置
+## config
 ```JS
 <vue-card-slide @success='sucEvent' @error='errEvent'></vue-card-slide>
 ```
 
-### 事件
+### event
 
 | name | Description   |
 | :--------:   | -----  |
